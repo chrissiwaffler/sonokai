@@ -1,3 +1,18 @@
+-> added the [monokai colorscheme from sublime](https://github.com/twolfson/sublime-files/blob/master/Packages/Color%20Scheme%20-%20Default/Monokai.sublime-color-scheme)
+to use it with lazy:
+```lua
+{
+    'chrissiwaffler/sonokai',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.g.sonokai_style = 'sublime'
+      vim.cmd.colorscheme 'sonokai'
+      vim.g.sonokai_enable_italic = true
+    end,
+  },
+```
+
 <h2 align="center">
 𝐃𝐞𝐟𝐚𝐮𝐥𝐭
 </h2>
